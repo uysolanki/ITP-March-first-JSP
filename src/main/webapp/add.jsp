@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+
 <!-- <h1>Welcome to my JSP page</h1>  -->
 <%!int n1,n2,sum; 
 double areaCircle(int radius)
@@ -20,8 +22,9 @@ n2=Integer.parseInt(request.getParameter("t2"));
 sum=n1+n2;
 //out.print(sum);
 %>
-<%@ include file="header.html" %>
+<%@ include file="newheader.jsp" %>
 <h1>The Result is <%= sum %></h1>
+<h1><%= test() %></h1>
 <%
 Random random=new Random();
 n1=random.nextInt(100);
