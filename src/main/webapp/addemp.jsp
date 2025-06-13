@@ -26,7 +26,7 @@
 				Emp Number</label>
 			<div class="col-sm-6">
 				<input type="text" class="form-control" id="exampleInputEmpNumber1"
-					aria-describedby="emailHelp" placeholder="Enter Emp Number ">
+					aria-describedby="emailHelp" placeholder="Enter Emp Number " name="t1">
 			</div>
 		</div>
 		<div class="form-group">
@@ -34,7 +34,7 @@
 				Emp Name</label>
 			<div class="col-sm-6">
 				<input type="text" class="form-control" id="exampleInpuEmpName1"
-					placeholder="Enter Emp Name">
+					placeholder="Enter Emp Name" name="t2">
 			</div>
 		</div>
 
@@ -43,7 +43,7 @@
 				Emp Salary</label>
 			<div class="col-sm-6">
 				<input type="text" class="form-control" id="exampleInputSalary1"
-					placeholder="Enter Emp Salary">
+					placeholder="Enter Emp Salary" name="t3">
 			</div>
 		</div>
 
@@ -67,7 +67,7 @@
 
 			int rows = ps.executeUpdate();
 			if (rows > 0) {
-		RequestDispatcher rd = request.getRequestDispatcher("/confirm.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/allemp.jsp");
 		rd.forward(request, response);
 			} else
 		out.print("Record Not Inserted");
